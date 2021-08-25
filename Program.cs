@@ -4,7 +4,7 @@ namespace ConsoleApp_Learn_Programming_
 {
     class Program
     {
-        static void MaxValue() 
+        static int MaxValue() 
         {
 
             int[] numbers = new int[5] { 2, 5, 10, 20, 3 };
@@ -19,11 +19,11 @@ namespace ConsoleApp_Learn_Programming_
 
             }
 
-            Console.WriteLine(maxvalue);
+            return maxvalue;
 
         }
 
-        static void MinValue()
+        static int MinValue()
         {
 
             int[] numbers = new int[5] { -2, -5, -10, -20, -3 };
@@ -38,7 +38,7 @@ namespace ConsoleApp_Learn_Programming_
 
             }
 
-            Console.WriteLine(minvalue);
+            return minvalue;
 
         }
         static void Main(string[] args)
@@ -52,8 +52,8 @@ namespace ConsoleApp_Learn_Programming_
             //Console.WriteLine(input);
 
 
-            MaxValue();
-            MinValue();
+            Console.WriteLine(MaxValue());
+            Console.WriteLine(MinValue());
 
 
 
